@@ -1,59 +1,73 @@
-package com.template.util.model;
+package com.template.test.pojo.model;
 
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
 
-public class Template implements Serializable {
-	private static final long serialVersionUID = 1L;
-	// 模板主键
-	private String id;
-	// 创建时间
-	private Date createTime;
-	// 名称
-	private String templateName;
-	// 状态
-	private Integer templateStatus;
-	// 类型
-	private Integer templateType;
+/**
+ * 模板-实体
+ * @author Renhao
+ * @version 1.0
+ */
 
-	public String getId() {
-		return id;
-	}
+public class Template implements Serializable{
 
-	public void setId(String id) {
-		this.id = id;
-	}
+    private static final long serialVersionUID = -8893494706131531685L;
 
-	public void setCreateTime(Date createTime) {
-		this.createTime = createTime;
-	}
+    private String templateId;
+    //String字段
+    private String templateString;
+    //整数字段
+    private Integer templateInt;
+    //小数字段
+    private Double templateDouble;
+    //时间字段
+    private Date templateDate;
 
-	public Date getCreateTime() {
-		return createTime;
-	}
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
 
-	public void setTemplateName(String templateName) {
-		this.templateName = templateName;
-	}
+    public String getTemplateId() {
+        return templateId;
+    }
 
-	public String getTemplateName() {
-		return templateName;
-	}
+    public void setTemplateId(String templateId) {
+        this.templateId = templateId;
+    }
 
-	public void setTemplateStatus(Integer templateStatus) {
-		this.templateStatus = templateStatus;
-	}
+    public String getTemplateString() {
+        return templateString;
+    }
 
-	public Integer getTemplateStatus() {
-		return templateStatus;
-	}
+    public void setTemplateString(String templateString) {
+        this.templateString = templateString;
+    }
 
-	public void setTemplateType(Integer templateType) {
-		this.templateType = templateType;
-	}
+    public Integer getTemplateInt() {
+        return templateInt;
+    }
 
-	public Integer getTemplateType() {
-		return templateType;
-	}
+    public void setTemplateInt(Integer templateInt) {
+        this.templateInt = templateInt;
+    }
+
+    public Double getTemplateDouble() {
+        return templateDouble;
+    }
+
+    public void setTemplateDouble(Double templateDouble) {
+        this.templateDouble = templateDouble;
+    }
+
+    public Date getTemplateDate() {
+        return templateDate;
+    }
+
+    public void setTemplateDate(Date templateDate) {
+        this.templateDate = templateDate;
+    }
 }
