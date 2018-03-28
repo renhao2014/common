@@ -1,8 +1,5 @@
-package com.template.test.pojo.model;
+package com.template.util.model;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 

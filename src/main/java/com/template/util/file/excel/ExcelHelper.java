@@ -449,9 +449,9 @@ public class ExcelHelper {
         List<Object> templates = new ArrayList<Object>();
         for (int i = 0; i < 3; i++) {
             Template template = new Template();
-            template.setTemplateName("名称");
-            template.setTemplateType(222);
-            template.setCreateTime(new Date());
+            template.setTemplateString("名称");
+            template.setTemplateInt(222);
+            template.setTemplateDate(new Date());
             templates.add(template);
         }
         Workbook workbook = defaultExport(sheetTitle, titles, attrs, templates);
